@@ -1,0 +1,10 @@
+<h1>Information</h1>
+<% @gossip.each do |t|%>
+<div class="card text-white bg-dark mb-3" style="max-width: 20rem; text-align: center;">
+  <div class="card-header"><strong class="line">id:</strong> <%=t.id%></div>
+  <div class="card-body">
+    <h class="card-title"> <strong class="line">Author:</strong> <%= t.author%></h>
+    <p class="card-text"> <strong class="line">Content:</strong> <%= t.content%></p>
+  </div>
+</div>
+<% end %>

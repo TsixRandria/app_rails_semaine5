@@ -1,0 +1,17 @@
+<table class="table table-bordered", style="width: 80%; color: white">
+   <thead>
+    <tr>
+      <th scope="col">Author</th>
+      <th scope="col">Content</th>
+    </tr>
+  </thead>
+  <tbody>
+  	<%@gossip.each do |t|%>
+    <tr>
+      <td scope="row"><a href="/<%= t.author%>"><%=t.author%></a></td>
+      <td><%=t.content%></td>
+      <td><a href="/index/<%=t.author%>", class= "btn btn-info">page</a></td>
+    </tr>
+    <%end%>
+  </tbody>
+</table>
